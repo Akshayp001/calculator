@@ -34,8 +34,6 @@ class _HomePageState extends State<HomePage> {
 
   void onButtonClick(int index) {
     setState(() {
-      // print(content[content.length - 1]);
-      // print(index);
 
       if (isOperator(content[content.length - 1]) &&
           isOperator(buttonsKeys[index])) {
@@ -118,7 +116,7 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.black,
         title: Container(
             alignment: Alignment.center,
-            // padding: EdgeInsets.all(3),/
+            // padding: EdgeInsets.all(3),
             height: 28,
             width: 100,
             decoration: BoxDecoration(
@@ -137,8 +135,6 @@ class _HomePageState extends State<HomePage> {
             mainAxisAlignment: MainAxisAlignment.end,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              // AnswerText Container.........
-              // AnswerText Container.........
               // AnswerText Container.........
               Container(
                 padding: EdgeInsets.all(10),
@@ -164,8 +160,6 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),
                 decoration: BoxDecoration(
-                    // color: Colors.black,
-
                     border: Border.all(color: Colors.white),
                     borderRadius: BorderRadius.circular(16)),
                 height: 80,
@@ -179,8 +173,6 @@ class _HomePageState extends State<HomePage> {
                 height: 10,
               ),
               // QuestionText Container.........
-              // QuestionText Container.........
-              // QuestionText Container.........
               Container(
                 padding: EdgeInsets.all(10),
                 alignment: Alignment.centerRight,
@@ -192,8 +184,6 @@ class _HomePageState extends State<HomePage> {
                       fontSize: 30),
                 ),
                 decoration: BoxDecoration(
-                    // color: Colors.black,
-
                     border: Border.all(color: Colors.white),
                     borderRadius: BorderRadius.circular(16)),
                 height: 80,
@@ -208,7 +198,6 @@ class _HomePageState extends State<HomePage> {
               ),
               Container(
                 decoration: BoxDecoration(
-                    // color: Colors.black,
                     border: Border.all(color: Colors.white),
                     borderRadius: BorderRadius.circular(13)),
                 padding: EdgeInsets.all(5),
@@ -243,10 +232,8 @@ class _HomePageState extends State<HomePage> {
                       child: Container(
                         child: Center(
                             child: Text(
-                          // index.toString(),
                           buttonsKeys[index],
                           style: TextStyle(
-                              // color: ,
                               fontFamily: 'SourceSerifPro',
                               fontSize: 27,
                               fontWeight: FontWeight.bold),
